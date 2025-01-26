@@ -1,0 +1,160 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Large Picture Section */
+  .gallery-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .large-dog {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .large-dog img {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Buttons */
+  .button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    transform: translateY(0);
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+  }
+  
+  /* Small Gallery Section */
+  .small-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .dog-card {
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dog-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, border 0.2s;
+  }
+  
+  .dog-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .dog-card.selected {
+    border: 3px solid #007bff;
+  }
+  
+  /* Favorites Gallery Section */
+  .favorites-container {
+    padding: 20px;
+  }
+  
+  .favorites-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .favorites-gallery .dog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .remove-button {
+    margin-top: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+  }
+  
+  .remove-button:active {
+    transform: translateY(0);
+  }
+  
+  .remove-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.7);
+  }
+
+  /* Confirmation Tick */
+.confirmation-tick {
+    margin-top: 10px;
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
