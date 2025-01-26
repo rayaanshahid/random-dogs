@@ -51,8 +51,8 @@ Follow these steps to set up and run the app locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/favorite-dogs-app.git
-   cd favorite-dogs-app
+   git clone https://github.com/rayaanshahid/random-dogs.git
+   cd random-dogs
 
 2. Install Dependencies:
 
